@@ -1,7 +1,7 @@
-package com.plcoding.weatherapp.data.remote.repository
+package com.plcoding.weatherapp.data.repository
 
 import com.plcoding.weatherapp.data.remote.WeatherApi
-import com.plcoding.weatherapp.data.remote.mappers.toWeatherInfo
+import com.plcoding.weatherapp.data.mappers.toWeatherInfo
 import com.plcoding.weatherapp.domain.repository.WeatherRepository
 import com.plcoding.weatherapp.domain.util.Resource
 import com.plcoding.weatherapp.domain.weather.WeatherInfo

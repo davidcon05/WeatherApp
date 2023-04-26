@@ -1,4 +1,4 @@
-package com.plcoding.weatherapp.data.remote.mappers
+package com.plcoding.weatherapp.data.mappers
 
 import com.plcoding.weatherapp.data.remote.WeatherDataDto
 import com.plcoding.weatherapp.data.remote.WeatherDto
