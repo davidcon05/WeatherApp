@@ -9,12 +9,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95a9ff9a-622f-4fdb-b01e-47b41bb93268" name="Changes" comment="removed duplicated code, implement repo">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/plcoding/weatherapp/data/location/DefaultLocationTracker.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/plcoding/weatherapp/domain/location/LocationTracker.kt" afterDir="false" />
+    <list default="true" id="95a9ff9a-622f-4fdb-b01e-47b41bb93268" name="Changes" comment="finalize data layer with weathermapp and location tracker">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/plcoding/weatherapp/WeatherApp.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/plcoding/weatherapp/di/AppModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/plcoding/weatherapp/di/LocationModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/plcoding/weatherapp/di/RepositoryModule.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plcoding/weatherapp/data/remote/mappers/WeatherMappers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plcoding/weatherapp/data/mappers/WeatherMappers.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plcoding/weatherapp/data/remote/repository/WeatherRepoImplementation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plcoding/weatherapp/data/repository/WeatherRepoImplementation.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +71,7 @@
         <option value="Kotlin Data Class" />
         <option value="Kotlin File" />
         <option value="Kotlin Interface" />
+        <option value="Kotlin Object" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -124,6 +125,11 @@
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.plcoding.weatherapp.di" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="WeatherApp.app.main" />
@@ -221,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682510966026</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="finalize data layer with weathermapp and location tracker">
+      <created>1682548844900</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682548844900</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,6 +253,7 @@
     <MESSAGE value="create weather data classes and mapper" />
     <MESSAGE value="update the readme to document my learning adventure" />
     <MESSAGE value="removed duplicated code, implement repo" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed duplicated code, implement repo" />
+    <MESSAGE value="finalize data layer with weathermapp and location tracker" />
+    <option name="LAST_COMMIT_MESSAGE" value="finalize data layer with weathermapp and location tracker" />
   </component>
 </project>
