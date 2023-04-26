@@ -9,18 +9,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95a9ff9a-622f-4fdb-b01e-47b41bb93268" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/app/WeatherApp.app.androidTest.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/app/WeatherApp.app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/app/WeatherApp.app.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/app/WeatherApp.app.unitTest.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/plcoding/weatherapp/data/remote/WeatherApi.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/plcoding/weatherapp/data/remote/WeatherDataDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/plcoding/weatherapp/data/remote/WeatherDto.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="95a9ff9a-622f-4fdb-b01e-47b41bb93268" name="Changes" comment="update vcs, create remote data sources">
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/plcoding/weatherapp/data/remote/mappers/WeatherMappers.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/plcoding/weatherapp/domain/weather/WeatherData.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/plcoding/weatherapp/domain/weather/WeatherInfo.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,9 +68,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
         <option value="Kotlin Data Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -198,6 +192,14 @@
       <option name="presentableId" value="Default" />
       <updated>1682379341422</updated>
     </task>
+    <task id="LOCAL-00001" summary="update vcs, create remote data sources">
+      <created>1682470882564</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682470882564</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,5 +212,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update vcs, create remote data sources" />
+    <option name="LAST_COMMIT_MESSAGE" value="update vcs, create remote data sources" />
   </component>
 </project>
