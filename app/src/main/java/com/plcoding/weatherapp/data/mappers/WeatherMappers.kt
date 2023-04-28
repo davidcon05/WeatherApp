@@ -13,24 +13,17 @@ private data class IndexedWeatherData(
     val data: WeatherData
 )
 
-/**
- * Maps the weather data with the use of the Indexed Weather Data class, We use the index to
- * calculate the day of the week and group the weather data by day. Since each day has 24 hours,
- * the index is divided by 24 to get the day of the week.
- */
 fun WeatherDataDto.toWeatherDataMap(): Map<Int, List<WeatherData>> {
     return time.mapIndexed { index, time ->
-        val time = time[index]
         val temperature = temperature[index]
         val weatherCode = weatherCode[index]
-        val humidity = humidity[index]
         val windSpeed = windSpeed[index]
         val pressure = pressure[index]
-
+        val humidity = humidity[index]
         IndexedWeatherData(
             index = index,
             data = WeatherData(
-                time = LocalDateTime.parse(time.toString(), DateTimeFormatter.ISO_DATE_TIME),
+                time = LocalDateTime.parse(time, DateTimeFormatter.ISO_DATE_TIME),
                 temperature = temperature,
                 pressure = pressure,
                 windSpeed = windSpeed,
@@ -41,18 +34,15 @@ fun WeatherDataDto.toWeatherDataMap(): Map<Int, List<WeatherData>> {
     }.groupBy {
         it.index / 24
     }.mapValues {
-        it.value.map { indexedWeatherData ->
-            indexedWeatherData.data
-        }
+        it.value.map { it.data }
     }
-
 }
 
 fun WeatherDto.toWeatherInfo(): WeatherInfo {
     val weatherDataMap = weatherData.toWeatherDataMap()
     val now = LocalDateTime.now()
     val currentWeatherData = weatherDataMap[0]?.find {
-        val hour = if (now.minute < 30) now.hour else now.hour + 1
+        val hour = if(now.minute < 30) now.hour else now.hour + 1
         it.time.hour == hour
     }
     return WeatherInfo(

@@ -4,3 +4,4 @@ import androidx.compose.ui.graphics.Color
 
 val DarkBlue = Color(0xFF1B3B5A)
 val DeepBlue = Color(0xFF102840)
+val Stormy = Color(red = 120, green = 147, blue = 161)

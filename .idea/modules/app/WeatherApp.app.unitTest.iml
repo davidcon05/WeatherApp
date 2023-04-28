@@ -24,6 +24,7 @@
           <stringArguments>
             <stringArg name="classpath">
               <args>
+                <arg>$MODULE_DIR$/../../../app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/5.0.0-alpha.3/c1e23b2382be51a7e67023e0fce482a64bd621b6/logging-interceptor-5.0.0-alpha.3.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/d693014b14a78edb5643c0de5125b007/transformed/hilt-navigation-compose-1.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/7c672d5e96e4446453ce2e49d174bf2c/transformed/navigation-compose-2.4.0-api.jar</arg>
